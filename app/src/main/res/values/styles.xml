@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="Screentheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#FFBB86FC</item>
+        <item name="colorPrimaryDark">#FF6200EE</item>
+        <item name="colorAccent">#FF3700B3</item>
+        <item name="android:statusBarColor">@color/aqua</item>
+    </style>
+
+
+
+
+</resources>

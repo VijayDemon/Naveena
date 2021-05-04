@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_res"
+    app:startDestination="@id/listingCountryFragment">
+
+    <fragment
+        android:id="@+id/listingCountryFragment"
+        android:name="com.practice.weather.ListingCountryFragment"
+        android:label="fragment_listing_country"
+        tools:layout="@layout/fragment_listing_country" >
+        <action
+            android:id="@+id/action_listingCountryFragment_to_detailedCountryFragment"
+            app:destination="@id/detailedCountryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedCountryFragment"
+        android:name="com.practice.weather.DetailedCountryFragment"
+        android:label="fragment_detailed_country"
+        tools:layout="@layout/fragment_detailed_country" />
+</navigation>
